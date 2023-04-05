@@ -344,6 +344,7 @@
 "Assets/Scripts/DungeonSetup.cs"
 "Assets/Scripts/MasterData.cs"
 "Assets/Scripts/PlayerController.cs"
+"Assets/Scripts/centerController.cs"
 -langversion:9.0
 
 /deterministic
