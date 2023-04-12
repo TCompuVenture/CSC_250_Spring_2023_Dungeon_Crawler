@@ -13,7 +13,8 @@ public class DungeonSetup : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        this.northExit.SetActive(northOn);
+        MasterData.setupDungeon();
+        this.northExit.SetActive(northOn); //Put these in for loop. Use hasExit function of wanted room to decide whether or not to turn on an exit when setting up the room.
         this.southExit.SetActive(southOn);
         this.eastExit.SetActive(eastOn);
         this.westExit.SetActive(westOn);
