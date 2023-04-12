@@ -733,10 +733,10 @@ MonoBehaviour:
   southExit: {fileID: 55081488}
   eastExit: {fileID: 1518625908}
   westExit: {fileID: 1517157518}
-  northOn: 1
-  southOn: 1
-  eastOn: 1
-  westOn: 1
+  northOn: 0
+  southOn: 0
+  eastOn: 0
+  westOn: 0
 --- !u!4 &724793889
 Transform:
   m_ObjectHideFlags: 0
@@ -1109,7 +1109,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 0.05, y: 0.05, z: 0.05}
   m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!114 &1712155439
 MonoBehaviour:

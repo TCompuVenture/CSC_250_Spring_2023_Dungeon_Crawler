@@ -20,23 +20,23 @@ public class PlayerController : MonoBehaviour
             if(MasterData.whereDidIComeFrom.Equals("north"))
             {
                 this.gameObject.transform.position = this.southExit.transform.position;
-                this.rb.AddForce(Vector3.forward * 150.0f);
+                this.rb.AddForce(Vector3.forward * movementSpeed * 5);
             }
             if(MasterData.whereDidIComeFrom.Equals("south"))
             {
                 this.gameObject.transform.position = this.northExit.transform.position;
-                this.rb.AddForce(Vector3.back * 150f);
+                this.rb.AddForce(Vector3.back * movementSpeed * 5);
             }
             if(MasterData.whereDidIComeFrom.Equals("west"))
             {
                 this.gameObject.transform.position = this.eastExit.transform.position;
-                this.rb.AddForce(Vector3.left * 150f);
+                this.rb.AddForce(Vector3.left * movementSpeed * 5);
 
             }
             if(MasterData.whereDidIComeFrom.Equals("east"))
             {
                 this.gameObject.transform.position = this.westExit.transform.position;
-                this.rb.AddForce(Vector3.right * 150f);
+                this.rb.AddForce(Vector3.right * movementSpeed * 5);
 
             }
         }
@@ -98,18 +98,10 @@ public class PlayerController : MonoBehaviour
         print("Something hit me!");
         if(other.gameObject.CompareTag("Center"))
         {
-            this.rb.velocity = Vector3.zero;
-            this.rb.angularVelocity = Vector3.zero;
+          //  this.rb.velocity = Vector3.zero;
+          //  this.rb.angularVelocity = Vector3.zero;
             print("Player has hit center");
-            //rb.velocity = Vector3.zero;
-           // rb.maxAngularVelocity = 0f;
-            //this.rb.drag = 0;
-            //thePlayer.transform.SetPositionAndRotation(Vector3.zero, Quaternion.identity); 
-            //rb.velocity = Vector3.zero;
-            //thePlayer.transform.rotation = Quaternion.identity;;
-            print("Right after setting to 0: " + rb.velocity);
-            //print("Right after setting to 0: " + thePlayer.transform.rotation);
-          //  MasterData.setupDone = true;
+            this.rb.Sleep();
             MasterData.isMoving = false;
            // SceneManager.LoadScene("DungeonRoom"); //Ask scene manager to load a scene named "DugeonRoom 
 
@@ -139,11 +131,12 @@ public class PlayerController : MonoBehaviour
                             {
                                 MasterData.whereDidIComeFrom = "west";
                             }
+                    
                         print(MasterData.whereDidIComeFrom);
                         MasterData.count++;
-                        SceneManager.LoadScene("DungeonRoom"); //Ask scene manager to load a scene named "DugeonRoom 
                         MasterData.isExiting = false;
-                        
+                        MasterData.p.getCurrentRoom().takeExit(MasterData.p, MasterData.whereDidIComeFrom);
+                        SceneManager.LoadScene("DungeonRoom"); //Ask scene manager to load a scene named "DugeonRoom 
 
                     }
       /**  else if(other.gameObject.CompareTag("Exit") && !MasterData.isExiting) //Flip exits back on 
