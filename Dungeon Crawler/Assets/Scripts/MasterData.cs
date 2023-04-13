@@ -11,6 +11,8 @@ public class MasterData //NOT Monobehavior - doesn't need start() or update() th
     public static bool southOn;
     public static bool eastOn;
     public static bool westOn;
+   // public static Vector3 centerShift; //Idea here would be to shift center when Player has chosen a direction such that 
+   //When the Player rolls into the next room, the Player hits the edge of the centerController only when over dead center.
 
    public static void setupDungeon()
     {

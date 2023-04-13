@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class PlayerController : MonoBehaviour
 {
     private Rigidbody rb; //What we want to apply forces TO
+  //  public GameObject Center; //Unused - for future brainstorming purposes
     public GameObject northExit, southExit, eastExit, westExit; //Exposing exits
     public GameObject westStart, eastStart, northStart, southStart;
     public float movementSpeed = 40.0f; //Can tune in Unity editor b/c public
@@ -21,10 +22,10 @@ public class PlayerController : MonoBehaviour
             {
                 this.gameObject.transform.position = this.southExit.transform.position;
                 this.rb.AddForce(Vector3.forward * movementSpeed * 5);
+               // MasterData.centerShift = new Vector3();
             }
             if(MasterData.whereDidIComeFrom.Equals("south"))
             {
-                print("whoops");
                 this.gameObject.transform.position = this.northExit.transform.position;
                 this.rb.AddForce(Vector3.back * movementSpeed * 5);
             }
