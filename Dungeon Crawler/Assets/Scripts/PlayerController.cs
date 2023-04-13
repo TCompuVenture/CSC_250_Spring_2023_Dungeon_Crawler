@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
             }
             if(MasterData.whereDidIComeFrom.Equals("south"))
             {
+                print("whoops");
                 this.gameObject.transform.position = this.northExit.transform.position;
                 this.rb.AddForce(Vector3.back * movementSpeed * 5);
             }
@@ -62,7 +63,7 @@ public class PlayerController : MonoBehaviour
             //this.rb.transform.position = (new Vector3(0,0,0));
 
  
-        if(Input.GetKeyDown(KeyCode.UpArrow) && !MasterData.isMoving) //same as MasterData.isMoving == false
+        if(Input.GetKeyDown(KeyCode.UpArrow) && !MasterData.isMoving && MasterData.northOn == true) //same as MasterData.isMoving == false
         {
             this.rb.AddForce(this.northExit.transform.position * movementSpeed); //direction = POSITION of north exit position vector3
             MasterData.isMoving = true;
@@ -70,21 +71,21 @@ public class PlayerController : MonoBehaviour
             
         }
         
-        if(Input.GetKeyDown(KeyCode.LeftArrow) && !MasterData.isMoving) 
+        if(Input.GetKeyDown(KeyCode.LeftArrow) && !MasterData.isMoving && MasterData.westOn == true) 
         {
             this.rb.AddForce(this.westExit.transform.position * movementSpeed); 
             MasterData.isMoving = true;
             MasterData.isExiting = true;
 
         }
-        if(Input.GetKeyDown(KeyCode.RightArrow) && !MasterData.isMoving) 
+        if(Input.GetKeyDown(KeyCode.RightArrow) && !MasterData.isMoving && MasterData.eastOn == true) 
         {
             this.rb.AddForce(this.eastExit.transform.position * movementSpeed); 
             MasterData.isMoving = true;
             MasterData.isExiting = true;
 
         }  
-       if(Input.GetKeyDown(KeyCode.DownArrow) && !MasterData.isMoving) 
+       if(Input.GetKeyDown(KeyCode.DownArrow) && !MasterData.isMoving && MasterData.southOn == true) 
         {
             this.rb.AddForce(this.southExit.transform.position * movementSpeed); 
             MasterData.isMoving = true;

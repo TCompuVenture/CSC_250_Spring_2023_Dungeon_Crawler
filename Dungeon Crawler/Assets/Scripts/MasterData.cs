@@ -7,6 +7,10 @@ public class MasterData //NOT Monobehavior - doesn't need start() or update() th
     private static bool isDungeonSetup = false;
     public static Dungeon cs = null;
     public static Player p = null;
+    public static bool northOn;
+    public static bool southOn;
+    public static bool eastOn;
+    public static bool westOn;
 
    public static void setupDungeon()
     {
