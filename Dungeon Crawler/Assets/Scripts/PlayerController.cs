@@ -1,4 +1,4 @@
-    using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
   //  public GameObject Center; //Unused - for future brainstorming purposes
     public GameObject northExit, southExit, eastExit, westExit; //Exposing exits
     public GameObject westStart, eastStart, northStart, southStart;
+    public GameObject westMonster, eastMonster, northMonster, southMonster;
     public float movementSpeed = 40.0f; //Can tune in Unity editor b/c public
 
     // Start is called before the first frame update
@@ -42,17 +43,6 @@ public class PlayerController : MonoBehaviour
 
             }
         }
-
-       /** if(MasterData.whereDidIComeFrom.Equals("north"))
-        {
-            print("Force added");
-            this.rb.transform.position = this.southExit.transform.position;
-            //this.rb.AddForce(this.northExit.transform.position * movementSpeed);
-            this.rb.AddForce(new Vector3(0.00f,0.50f,3.00f) * movementSpeed);
-
-        }**/
-        //print(MasterData.isMoving);
-        //print(MasterData.setupDone);
         
     }
 
@@ -64,40 +54,62 @@ public class PlayerController : MonoBehaviour
             //this.rb.transform.position = (new Vector3(0,0,0));
 
  
-        if(Input.GetKeyDown(KeyCode.UpArrow) && !MasterData.isMoving && MasterData.northOn == true) //same as MasterData.isMoving == false
+        if(Input.GetKeyDown(KeyCode.UpArrow) && !MasterData.isMoving && MasterData.p.getCurrentRoom().hasExit("north")) //same as MasterData.isMoving == false
         {
             this.rb.AddForce(this.northExit.transform.position * movementSpeed); //direction = POSITION of north exit position vector3
             MasterData.isMoving = true;
             MasterData.isExiting = true;
+            if(monsterCheck() == true)
+            {
+                this.northMonster.SetActive(true);
+            }
             
         }
         
-        if(Input.GetKeyDown(KeyCode.LeftArrow) && !MasterData.isMoving && MasterData.westOn == true) 
+        if(Input.GetKeyDown(KeyCode.LeftArrow) && !MasterData.isMoving && MasterData.p.getCurrentRoom().hasExit("west")) 
         {
             this.rb.AddForce(this.westExit.transform.position * movementSpeed); 
             MasterData.isMoving = true;
             MasterData.isExiting = true;
+            if(monsterCheck() == true)
+            {
+                this.westMonster.SetActive(true);
+            }
 
         }
-        if(Input.GetKeyDown(KeyCode.RightArrow) && !MasterData.isMoving && MasterData.eastOn == true) 
+        if(Input.GetKeyDown(KeyCode.RightArrow) && MasterData.p.getCurrentRoom().hasExit("east")) 
         {
             this.rb.AddForce(this.eastExit.transform.position * movementSpeed); 
             MasterData.isMoving = true;
             MasterData.isExiting = true;
+            if(monsterCheck() == true)
+            {
+                this.eastMonster.SetActive(true);
+            }
 
         }  
-       if(Input.GetKeyDown(KeyCode.DownArrow) && !MasterData.isMoving && MasterData.southOn == true) 
+       if(Input.GetKeyDown(KeyCode.DownArrow) && MasterData.p.getCurrentRoom().hasExit("south")) 
         {
             this.rb.AddForce(this.southExit.transform.position * movementSpeed); 
             MasterData.isMoving = true;
             MasterData.isExiting = true;
-
+            if(monsterCheck() == true)
+            {
+                this.southMonster.SetActive(true);
+            }
         }     
     }
     
+private bool monsterCheck()
+{
+    if(Random.Range(1,10) <= 3)
+        {
+            return true;
+        }
+        return false;
+}
    private void OnTriggerEnter(Collider other)  
     {
-        print("Something hit me!");
         if(other.gameObject.CompareTag("Center"))
         {
           //  this.rb.velocity = Vector3.zero;
@@ -110,6 +122,12 @@ public class PlayerController : MonoBehaviour
             //this.rb.AddForce(new Vector3(0.00f,0.50f, -3.00f) * movementSpeed);
 
         }
+
+        if(other.gameObject.CompareTag("monster"))
+        {
+            SceneManager.LoadScene("FightScene");
+        }
+
     }
     private void OnTriggerExit(Collider other)
     {

@@ -350,6 +350,7 @@
 "Assets/Scripts/DungeonBackendCode/Room.cs"
 "Assets/Scripts/DungeonSetup.cs"
 "Assets/Scripts/MasterData.cs"
+"Assets/Scripts/MonsterRotator.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/centerController.cs"
 -langversion:9.0

@@ -8,6 +8,9 @@ public class DungeonSetup : MonoBehaviour
     public GameObject southExit;
     public GameObject eastExit;
     public GameObject westExit;
+    public GameObject westMonster, eastMonster, northMonster, southMonster;
+
+    public bool monsterController;
 
     /**public bool northOn;
     public bool southOn;
@@ -16,45 +19,39 @@ public class DungeonSetup : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for(int i = 0; i < 10; i++)
-        {
-            print(Random.Range(1,10));
-
-        }
         MasterData.setupDungeon();
-        MasterData.northOn = false;
-        MasterData.southOn = false;
-        MasterData.eastOn = false;
-        MasterData.westOn = false;
+        this.eastMonster.SetActive(false);
+        this.northMonster.SetActive(false);
+        this.southMonster.SetActive(false);
+        this.westMonster.SetActive(false);
 
-        this.northExit.SetActive(MasterData.northOn);
-        this.southExit.SetActive(MasterData.southOn);
-        this.westExit.SetActive(MasterData.westOn);
-        this.eastExit.SetActive(MasterData.eastOn);
 
-        if(MasterData.p.getCurrentRoom().hasExit("north"))
+
+        if(!MasterData.p.getCurrentRoom().hasExit("north"))
         {
-            print("This room has a north exit");
-            MasterData.northOn = true;
-            this.northExit.SetActive(MasterData.northOn);
+            print("This room has not a north exit");
+           // MasterData.northOn = false;
+            this.northExit.SetActive(false);
         }
-        if(MasterData.p.getCurrentRoom().hasExit("south"))
+        if(!MasterData.p.getCurrentRoom().hasExit("south"))
         {
-            print("This room has a south exit");
-            MasterData.southOn = true;
-            this.southExit.SetActive(MasterData.southOn);
+            print("This room has not a south exit");
+           // MasterData.southOn = false;
+            this.southExit.SetActive(false);
+
         }
-        if(MasterData.p.getCurrentRoom().hasExit("west"))
+        if(!MasterData.p.getCurrentRoom().hasExit("west"))
         {
-            print("This room has a west exit");
-            MasterData.westOn = true;
-            this.westExit.SetActive(MasterData.westOn);
+            print("This room has not a west exit");
+           // MasterData.westOn = false;
+            this.westExit.SetActive(false);
         }        
-        if(MasterData.p.getCurrentRoom().hasExit("east"))
+        if(!MasterData.p.getCurrentRoom().hasExit("east"))
         {
-            print("This room has an east exit");
-            MasterData.eastOn = true;
-            this.eastExit.SetActive(MasterData.eastOn);
+            print("This room has not an east exit");
+          //  MasterData.eastOn = false;
+            this.eastExit.SetActive(false);
+
         }
 
          //Put these in for loop. Use hasExit function of wanted room to decide whether or not to turn on an exit when setting up the room.
