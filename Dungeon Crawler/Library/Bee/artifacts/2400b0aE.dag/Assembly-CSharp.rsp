@@ -349,6 +349,7 @@
 "Assets/Scripts/DungeonBackendCode/Player.cs"
 "Assets/Scripts/DungeonBackendCode/Room.cs"
 "Assets/Scripts/DungeonSetup.cs"
+"Assets/Scripts/FightSceneSetup.cs"
 "Assets/Scripts/MasterData.cs"
 "Assets/Scripts/MonsterRotator.cs"
 "Assets/Scripts/PlayerController.cs"

@@ -56,47 +56,50 @@ public class PlayerController : MonoBehaviour
  
         if(Input.GetKeyDown(KeyCode.UpArrow) && !MasterData.isMoving && MasterData.p.getCurrentRoom().hasExit("north")) //same as MasterData.isMoving == false
         {
-            this.rb.AddForce(this.northExit.transform.position * movementSpeed); //direction = POSITION of north exit position vector3
-            MasterData.isMoving = true;
-            MasterData.isExiting = true;
             if(monsterCheck() == true)
             {
                 this.northMonster.SetActive(true);
+                this.movementSpeed = 20.0f;
             }
+            this.rb.AddForce(this.northExit.transform.position * movementSpeed); //direction = POSITION of north exit position vector3
+            MasterData.isMoving = true;
+            MasterData.isExiting = true;
+
             
         }
         
         if(Input.GetKeyDown(KeyCode.LeftArrow) && !MasterData.isMoving && MasterData.p.getCurrentRoom().hasExit("west")) 
         {
-            this.rb.AddForce(this.westExit.transform.position * movementSpeed); 
-            MasterData.isMoving = true;
-            MasterData.isExiting = true;
             if(monsterCheck() == true)
             {
                 this.westMonster.SetActive(true);
+                this.movementSpeed = 20.0f;
             }
-
+            this.rb.AddForce(this.westExit.transform.position * movementSpeed); 
+            MasterData.isMoving = true;
+            MasterData.isExiting = true;
         }
         if(Input.GetKeyDown(KeyCode.RightArrow) && MasterData.p.getCurrentRoom().hasExit("east")) 
         {
-            this.rb.AddForce(this.eastExit.transform.position * movementSpeed); 
-            MasterData.isMoving = true;
-            MasterData.isExiting = true;
             if(monsterCheck() == true)
             {
                 this.eastMonster.SetActive(true);
+                this.movementSpeed = 20.0f;
             }
-
+            this.rb.AddForce(this.eastExit.transform.position * movementSpeed); 
+            MasterData.isMoving = true;
+            MasterData.isExiting = true;
         }  
        if(Input.GetKeyDown(KeyCode.DownArrow) && MasterData.p.getCurrentRoom().hasExit("south")) 
         {
-            this.rb.AddForce(this.southExit.transform.position * movementSpeed); 
-            MasterData.isMoving = true;
-            MasterData.isExiting = true;
             if(monsterCheck() == true)
             {
                 this.southMonster.SetActive(true);
+                this.movementSpeed = 20.0f;
             }
+            this.rb.AddForce(this.southExit.transform.position * movementSpeed); 
+            MasterData.isMoving = true;
+            MasterData.isExiting = true;
         }     
     }
     
