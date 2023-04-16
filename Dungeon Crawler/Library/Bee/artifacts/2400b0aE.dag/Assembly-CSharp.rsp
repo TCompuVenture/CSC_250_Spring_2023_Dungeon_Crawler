@@ -354,6 +354,7 @@
 "Assets/Scripts/MonsterRotator.cs"
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/centerController.cs"
+"Assets/Scripts/fightController.cs"
 -langversion:9.0
 
 /deterministic

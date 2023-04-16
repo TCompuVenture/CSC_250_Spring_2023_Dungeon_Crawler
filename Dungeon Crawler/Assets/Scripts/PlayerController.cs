@@ -10,14 +10,30 @@ public class PlayerController : MonoBehaviour
     public GameObject northExit, southExit, eastExit, westExit; //Exposing exits
     public GameObject westStart, eastStart, northStart, southStart;
     public GameObject westMonster, eastMonster, northMonster, southMonster;
-    public float movementSpeed = 40.0f; //Can tune in Unity editor b/c public
+    public float movementSpeed = 20.0f; //Can tune in Unity editor b/c public
 
     // Start is called before the first frame update
     void Start()
     {
         this.rb = this.GetComponent<Rigidbody>(); //Ask Player for HIS rigidbody object, save into rb
+        if(MasterData.comingFromFight == true)
+        {
+            MasterData.isMoving = true;
+            MasterData.isExiting = true;
+            MasterData.comingFromFight = false;
+            //string directionToApplyForce = MasterData.whereDidIComeFrom + "Exit";
 
-        if(!MasterData.whereDidIComeFrom.Equals("?"))
+            if(MasterData.directionPlayerIsMoving == "north")
+                this.rb.AddForce(this.northExit.transform.position * movementSpeed); //direction = POSITION of north exit position vector3
+            if(MasterData.directionPlayerIsMoving == "south")
+                this.rb.AddForce(this.southExit.transform.position * movementSpeed);
+            if(MasterData.directionPlayerIsMoving == "east")
+                this.rb.AddForce(this.eastExit.transform.position * movementSpeed); 
+            if(MasterData.directionPlayerIsMoving == "west")
+                this.rb.AddForce(this.westExit.transform.position * movementSpeed);  
+        }
+
+        if(!MasterData.whereDidIComeFrom.Equals("?") && MasterData.comingFromFight == false)
         {
             if(MasterData.whereDidIComeFrom.Equals("north"))
             {
@@ -135,38 +151,33 @@ private bool monsterCheck()
     private void OnTriggerExit(Collider other)
     {
         print("I hit something!!!");
- 
         if(other.gameObject.CompareTag("Exit") && MasterData.isExiting == true)  //other.gameObject.tag.Equals("Exit")
-                    {
-                            if(other.gameObject == this.northExit)
-                            {
-                                MasterData.whereDidIComeFrom = "north";
-                            }
-                            if(other.gameObject == this.southExit)
-                            {
-                                MasterData.whereDidIComeFrom = "south";
-                            }
-                            if(other.gameObject == this.eastExit)
-                            {
-                                MasterData.whereDidIComeFrom = "east";
-                            }
-                            if(other.gameObject == this.westExit)
-                            {
-                                MasterData.whereDidIComeFrom = "west";
-                            }
-                    
-                        print(MasterData.whereDidIComeFrom);
-                        MasterData.count++;
-                        MasterData.isExiting = false;
-                        MasterData.p.getCurrentRoom().takeExit(MasterData.p, MasterData.whereDidIComeFrom);
-                        SceneManager.LoadScene("DungeonRoom"); //Ask scene manager to load a scene named "DugeonRoom 
-
-                    }
-      /**  else if(other.gameObject.CompareTag("Exit") && !MasterData.isExiting) //Flip exits back on 
         {
+            if(other.gameObject == this.northExit)
+                {
+                    MasterData.whereDidIComeFrom = "north";
+                }
+            if(other.gameObject == this.southExit)
+                {
+                    MasterData.whereDidIComeFrom = "south";
+                }
+            if(other.gameObject == this.eastExit)
+                {
+                    MasterData.whereDidIComeFrom = "east";
+                }
+            if(other.gameObject == this.westExit)
+                {
+                    MasterData.whereDidIComeFrom = "west";
+                }
+
+            print(MasterData.whereDidIComeFrom);
+            MasterData.count++;
             MasterData.isExiting = false;
-        }**/
-    
+            MasterData.p.getCurrentRoom().takeExit(MasterData.p, MasterData.whereDidIComeFrom);
+            SceneManager.LoadScene("DungeonRoom"); //Ask scene manager to load a scene named "DugeonRoom 
+        }
+
 
     }
+
 }

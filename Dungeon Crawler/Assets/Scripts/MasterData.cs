@@ -7,6 +7,8 @@ public class MasterData //NOT Monobehavior - doesn't need start() or update() th
     private static bool isDungeonSetup = false;
     public static Dungeon cs = null;
     public static Player p = null;
+    public static bool comingFromFight = false;
+    public static string directionPlayerIsMoving;
 
    // public static Vector3 centerShift; //Idea here would be to shift center when Player has chosen a direction such that 
    //When the Player rolls into the next room, the Player hits the edge of the centerController only when over dead center.
