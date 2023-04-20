@@ -244,3 +244,357 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 194.924715 seconds.
+  path: Assets/Triple Dungeon Pack
+  artifactKey: Guid(2bac2a327c6aae6a58e87b8ea556d959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Triple Dungeon Pack using Guid(2bac2a327c6aae6a58e87b8ea556d959) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d5d34b565479de83d0bad0eb6a6e5fc') in 0.007615 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.205619 seconds.
+  path: Assets/Triple Dungeon Pack/Blue Dungeon
+  artifactKey: Guid(10adf50a35c80735e95e1e70dc7e8297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Triple Dungeon Pack/Blue Dungeon using Guid(10adf50a35c80735e95e1e70dc7e8297) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '227e3ceb90f2587b5b3c206c484ffba0') in 0.000819 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.036482 seconds.
+  path: Assets/Triple Dungeon Pack/Blue Dungeon/blue_dungeon.fbx
+  artifactKey: Guid(4e15996ba1e2f4b4392985ef6ac6b27c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Triple Dungeon Pack/Blue Dungeon/blue_dungeon.fbx using Guid(4e15996ba1e2f4b4392985ef6ac6b27c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcf786b40c6e5bf8f96cfd6ec968deae') in 0.406096 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 17.893029 seconds.
+  path: Assets/Triple Dungeon Pack/Blue Dungeon/prefabs
+  artifactKey: Guid(1bace09ab9333e34b8793ac1cbf248ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Triple Dungeon Pack/Blue Dungeon/prefabs using Guid(1bace09ab9333e34b8793ac1cbf248ea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dac07b82d7390fb4b5516b8cf1f2ea18') in 0.000557 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.965346 seconds.
+  path: Assets/Triple Dungeon Pack/Blue Dungeon/prefabs/ground_stairs
+  artifactKey: Guid(6cc19ac41ca5dfb429cba38aef2a90f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Triple Dungeon Pack/Blue Dungeon/prefabs/ground_stairs using Guid(6cc19ac41ca5dfb429cba38aef2a90f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39e7c4fc6f6bfccfc8b0e6d3155f8bc8') in 0.000496 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.067119 seconds.
+  path: Assets/Triple Dungeon Pack/Blue Dungeon/prefabs/ground_stairs/ground-1-1.prefab
+  artifactKey: Guid(958c539e6f5b3da4e988c157ff999d76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Triple Dungeon Pack/Blue Dungeon/prefabs/ground_stairs/ground-1-1.prefab using Guid(958c539e6f5b3da4e988c157ff999d76) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6d955fdb74df35acb5b6b4b7691629f') in 0.013466 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.010817 seconds.
+  path: Assets/Triple Dungeon Pack/Blue Dungeon/prefabs/ground_stairs/ground-2_corner.prefab
+  artifactKey: Guid(09a02935dd575a4448deb91ce0185c2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Triple Dungeon Pack/Blue Dungeon/prefabs/ground_stairs/ground-2_corner.prefab using Guid(09a02935dd575a4448deb91ce0185c2b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a467b0a9298df70d2b33000cc7ecef29') in 0.019173 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Triple Dungeon Pack/Blue Dungeon/prefabs/ground_stairs/ground_12.prefab
+  artifactKey: Guid(bd6f5d665b09d444c9509853346c1237) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Triple Dungeon Pack/Blue Dungeon/prefabs/ground_stairs/ground_12.prefab using Guid(bd6f5d665b09d444c9509853346c1237) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8e4dde3e6a3ea0f6031f38c425c1136') in 0.015408 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Triple Dungeon Pack/Blue Dungeon/prefabs/ground_stairs/ground_9.prefab
+  artifactKey: Guid(3ebb497a37e800f44b597338c52813bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Triple Dungeon Pack/Blue Dungeon/prefabs/ground_stairs/ground_9.prefab using Guid(3ebb497a37e800f44b597338c52813bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7eca0c59d0c0db80c69b31faedbc9496') in 0.019401 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000080 seconds.
+  path: Assets/Triple Dungeon Pack/Blue Dungeon/prefabs/ground_stairs/ground_13.prefab
+  artifactKey: Guid(429fe0ad9518a524bb17efc46b496305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Triple Dungeon Pack/Blue Dungeon/prefabs/ground_stairs/ground_13.prefab using Guid(429fe0ad9518a524bb17efc46b496305) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd1df56659b2b39b23fb4975bce9a322f') in 0.022361 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/Triple Dungeon Pack/Blue Dungeon/prefabs/ground_stairs/ground_15.prefab
+  artifactKey: Guid(88871cb3fdd18c84998c33a8d9408d16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Triple Dungeon Pack/Blue Dungeon/prefabs/ground_stairs/ground_15.prefab using Guid(88871cb3fdd18c84998c33a8d9408d16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '83053e07962c2334582e975efceb68ed') in 0.013804 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Triple Dungeon Pack/Blue Dungeon/prefabs/ground_stairs/ground_7.prefab
+  artifactKey: Guid(74f3126c201736a469c0797cf65444b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Triple Dungeon Pack/Blue Dungeon/prefabs/ground_stairs/ground_7.prefab using Guid(74f3126c201736a469c0797cf65444b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1590f416ed67006ac2d0e20ee1cadbcf') in 0.011420 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Triple Dungeon Pack/Blue Dungeon/prefabs/ground_stairs/stairs_2.prefab
+  artifactKey: Guid(a70d0f9c99a36034cb19fed7f2ad5452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Triple Dungeon Pack/Blue Dungeon/prefabs/ground_stairs/stairs_2.prefab using Guid(a70d0f9c99a36034cb19fed7f2ad5452) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2b9405a500b7bc1387fcc96e4b9a5b9') in 0.011021 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Triple Dungeon Pack/Blue Dungeon/prefabs/ground_stairs/ground_16.prefab
+  artifactKey: Guid(298d627fc08ec2844865e8b0fb2b70f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Triple Dungeon Pack/Blue Dungeon/prefabs/ground_stairs/ground_16.prefab using Guid(298d627fc08ec2844865e8b0fb2b70f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b72bc77f50be5dadab3b904b15a87e71') in 0.015214 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Triple Dungeon Pack/Blue Dungeon/prefabs/ground_stairs/ground-2.prefab
+  artifactKey: Guid(03522bb5dd98b2b49b21ea6c9516b2d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Triple Dungeon Pack/Blue Dungeon/prefabs/ground_stairs/ground-2.prefab using Guid(03522bb5dd98b2b49b21ea6c9516b2d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faa7c5384f06942a7b261344941d2f02') in 0.012066 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Triple Dungeon Pack/Blue Dungeon/prefabs/ground_stairs/ground_6.prefab
+  artifactKey: Guid(80ab2159d2bdbc54e816283f52b4ea54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Triple Dungeon Pack/Blue Dungeon/prefabs/ground_stairs/ground_6.prefab using Guid(80ab2159d2bdbc54e816283f52b4ea54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3fd83769d033244d41ea0aaf68153a93') in 0.013825 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Triple Dungeon Pack/Blue Dungeon/prefabs/ground_stairs/ground_1.prefab
+  artifactKey: Guid(94cdfadae0c50374cbc28325b389c1f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Triple Dungeon Pack/Blue Dungeon/prefabs/ground_stairs/ground_1.prefab using Guid(94cdfadae0c50374cbc28325b389c1f7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f3fbe741cd1ea590030fe507762c5fc') in 0.016702 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Triple Dungeon Pack/Blue Dungeon/prefabs/ground_stairs/stairs_1.prefab
+  artifactKey: Guid(29748466972c61f4e8a122c9c839603b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Triple Dungeon Pack/Blue Dungeon/prefabs/ground_stairs/stairs_1.prefab using Guid(29748466972c61f4e8a122c9c839603b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7068a320d5e9890ad73ecb602018f93') in 0.020627 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Triple Dungeon Pack/Blue Dungeon/prefabs/ground_stairs/ground_2.prefab
+  artifactKey: Guid(078375d89d068ff43b690e53ac911589) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Triple Dungeon Pack/Blue Dungeon/prefabs/ground_stairs/ground_2.prefab using Guid(078375d89d068ff43b690e53ac911589) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0fb1aa13af4618bc2bd9d47f846f6805') in 0.010303 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Triple Dungeon Pack/Blue Dungeon/prefabs/ground_stairs/ground_3.prefab
+  artifactKey: Guid(57160797b6580ef4d82bf06829b51f81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Triple Dungeon Pack/Blue Dungeon/prefabs/ground_stairs/ground_3.prefab using Guid(57160797b6580ef4d82bf06829b51f81) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2002fb9e90d517e93a6b31a1a466a41') in 0.030156 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000051 seconds.
+  path: Assets/Triple Dungeon Pack/Blue Dungeon/prefabs/ground_stairs/ground_11.prefab
+  artifactKey: Guid(ac4a1a6f99e8e4b4f95b075c1bad951e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Triple Dungeon Pack/Blue Dungeon/prefabs/ground_stairs/ground_11.prefab using Guid(ac4a1a6f99e8e4b4f95b075c1bad951e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37e41e53266e9ac9325d99b93e210b6d') in 0.020560 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002369 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /home/timothyc/Documents/GitRepos/CSC_250_Spring_2023_Dungeon_Crawler/Dungeon Crawler/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /home/timothyc/Documents/GitRepos/CSC_250_Spring_2023_Dungeon_Crawler/Dungeon Crawler/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.880 seconds
+Domain Reload Profiling:
+	ReloadAssembly (880ms)
+		BeginReloadAssembly (101ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (31ms)
+		EndReloadAssembly (678ms)
+			LoadAssemblies (49ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (254ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (282ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (0ms)
+				BeforeProcessingInitializeOnLoad (51ms)
+				ProcessInitializeOnLoadAttributes (195ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.24 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3060 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (57.9 KB). Loaded Objects now: 3547.
+Memory consumption went from 107.4 MB to 107.4 MB.
+Total: 2.894618 ms (FindLiveObjects: 0.270435 ms CreateObjectMapping: 0.088815 ms MarkObjects: 2.201061 ms  DeleteObjects: 0.332663 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002548 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /home/timothyc/Documents/GitRepos/CSC_250_Spring_2023_Dungeon_Crawler/Dungeon Crawler/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /home/timothyc/Documents/GitRepos/CSC_250_Spring_2023_Dungeon_Crawler/Dungeon Crawler/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.97 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.887 seconds
+Domain Reload Profiling:
+	ReloadAssembly (887ms)
+		BeginReloadAssembly (88ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (28ms)
+		EndReloadAssembly (701ms)
+			LoadAssemblies (40ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (273ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (45ms)
+			SetupLoadedEditorAssemblies (283ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (52ms)
+				ProcessInitializeOnLoadAttributes (196ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.07 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3060 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (57.9 KB). Loaded Objects now: 3550.
+Memory consumption went from 107.4 MB to 107.4 MB.
+Total: 2.976636 ms (FindLiveObjects: 0.195137 ms CreateObjectMapping: 0.070592 ms MarkObjects: 2.479557 ms  DeleteObjects: 0.229023 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003652 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /home/timothyc/Documents/GitRepos/CSC_250_Spring_2023_Dungeon_Crawler/Dungeon Crawler/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /home/timothyc/Documents/GitRepos/CSC_250_Spring_2023_Dungeon_Crawler/Dungeon Crawler/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.97 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.917 seconds
+Domain Reload Profiling:
+	ReloadAssembly (918ms)
+		BeginReloadAssembly (106ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (6ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (32ms)
+		EndReloadAssembly (711ms)
+			LoadAssemblies (49ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (284ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (45ms)
+			SetupLoadedEditorAssemblies (281ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (51ms)
+				ProcessInitializeOnLoadAttributes (193ms)
+				ProcessInitializeOnLoadMethodAttributes (18ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.49 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3060 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (57.9 KB). Loaded Objects now: 3553.
+Memory consumption went from 107.4 MB to 107.4 MB.
+Total: 4.049928 ms (FindLiveObjects: 0.462719 ms CreateObjectMapping: 0.198678 ms MarkObjects: 3.084125 ms  DeleteObjects: 0.302220 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.002362 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image /home/timothyc/Documents/GitRepos/CSC_250_Spring_2023_Dungeon_Crawler/Dungeon Crawler/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/YamlDotNet/Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image /home/timothyc/Documents/GitRepos/CSC_250_Spring_2023_Dungeon_Crawler/Dungeon Crawler/Library/PackageCache/com.unity.visualscripting@1.8.0/Editor/VisualScripting.Core/Dependencies/DotNetZip/Unity.VisualScripting.IonicZip.dll
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.67 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.884 seconds
+Domain Reload Profiling:
+	ReloadAssembly (885ms)
+		BeginReloadAssembly (110ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (44ms)
+		EndReloadAssembly (675ms)
+			LoadAssemblies (44ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (261ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (40ms)
+			SetupLoadedEditorAssemblies (275ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (48ms)
+				ProcessInitializeOnLoadAttributes (192ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (4ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (3ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.69 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3060 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 17 unused Assets / (57.9 KB). Loaded Objects now: 3556.
+Memory consumption went from 107.4 MB to 107.4 MB.
+Total: 3.262219 ms (FindLiveObjects: 0.231207 ms CreateObjectMapping: 0.076441 ms MarkObjects: 2.627936 ms  DeleteObjects: 0.324378 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
