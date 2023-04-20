@@ -5,179 +5,148 @@ using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
-    private Rigidbody rb; //What we want to apply forces TO
-  //  public GameObject Center; //Unused - for future brainstorming purposes
-    public GameObject northExit, southExit, eastExit, westExit; //Exposing exits
+    private Rigidbody rb;
+    public GameObject northExit, southExit, eastExit, westExit;
     public GameObject westStart, eastStart, northStart, southStart;
-    public GameObject westMonster, eastMonster, northMonster, southMonster;
-    public float movementSpeed = 20.0f; //Can tune in Unity editor b/c public
+    public float movementSpeed = 40.0f;
+    private bool isMoving;
 
     // Start is called before the first frame update
     void Start()
     {
-        this.rb = this.GetComponent<Rigidbody>(); //Ask Player for HIS rigidbody object, save into rb
-        if(MasterData.comingFromFight == true)
-        {
-            MasterData.isMoving = true;
-            MasterData.isExiting = true;
-            MasterData.comingFromFight = false;
-            //string directionToApplyForce = MasterData.whereDidIComeFrom + "Exit";
+        this.updateExits();
 
-            if(MasterData.directionPlayerIsMoving == "north")
-                this.rb.AddForce(this.northExit.transform.position * movementSpeed); //direction = POSITION of north exit position vector3
-            if(MasterData.directionPlayerIsMoving == "south")
-                this.rb.AddForce(this.southExit.transform.position * movementSpeed);
-            if(MasterData.directionPlayerIsMoving == "east")
-                this.rb.AddForce(this.eastExit.transform.position * movementSpeed); 
-            if(MasterData.directionPlayerIsMoving == "west")
-                this.rb.AddForce(this.westExit.transform.position * movementSpeed);  
-        }
+        this.rb = this.GetComponent<Rigidbody>();
+        this.isMoving = false;
 
-        if(!MasterData.whereDidIComeFrom.Equals("?") && MasterData.comingFromFight == false)
+        if (!MasterData.whereDidIComeFrom.Equals("?"))
         {
             if(MasterData.whereDidIComeFrom.Equals("north"))
             {
                 this.gameObject.transform.position = this.southExit.transform.position;
-                this.rb.AddForce(Vector3.forward * movementSpeed * 5);
-               // MasterData.centerShift = new Vector3();
+                this.rb.AddForce(Vector3.forward * 150.0f);
             }
-            if(MasterData.whereDidIComeFrom.Equals("south"))
+            else if (MasterData.whereDidIComeFrom.Equals("south"))
             {
                 this.gameObject.transform.position = this.northExit.transform.position;
-                this.rb.AddForce(Vector3.back * movementSpeed * 5);
+                this.rb.AddForce(Vector3.back * 150.0f);
             }
-            if(MasterData.whereDidIComeFrom.Equals("west"))
+            else if (MasterData.whereDidIComeFrom.Equals("west"))
             {
                 this.gameObject.transform.position = this.eastExit.transform.position;
-                this.rb.AddForce(Vector3.left * movementSpeed * 5);
-
+                this.rb.AddForce(Vector3.left * 150.0f);
             }
-            if(MasterData.whereDidIComeFrom.Equals("east"))
+            else if (MasterData.whereDidIComeFrom.Equals("east"))
             {
                 this.gameObject.transform.position = this.westExit.transform.position;
-                this.rb.AddForce(Vector3.right * movementSpeed * 5);
-
+                this.rb.AddForce(Vector3.right * 150.0f);
             }
         }
         
+     
+    }
+
+    private void updateExits()
+    {
+        Room currentRoom = MasterData.p.getCurrentRoom();
+        if(currentRoom.hasExit("north") == false)
+        {
+            this.northExit.SetActive(false);
+        }
+        if (currentRoom.hasExit("south") == false)
+        {
+            this.southExit.SetActive(false);
+        }
+        if (currentRoom.hasExit("east") == false)
+        {
+            this.eastExit.SetActive(false);
+        }
+        if (currentRoom.hasExit("west") == false)
+        {
+            this.westExit.SetActive(false);
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.CompareTag("center"))
+        {
+            this.rb.velocity = Vector3.zero;
+            this.rb.Sleep();
+            //this.rb.angularVelocity = Vector3.zero;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if(other.gameObject.CompareTag("Exit") && MasterData.isExiting)
+        {
+            if(other.gameObject == this.northExit)
+            {
+                MasterData.whereDidIComeFrom = "north";
+            }
+            else if (other.gameObject == this.southExit)
+            {
+                MasterData.whereDidIComeFrom = "south";
+            }
+            else if (other.gameObject == this.eastExit)
+            {
+                MasterData.whereDidIComeFrom = "east";
+            }
+            else if (other.gameObject == this.westExit)
+            {
+                MasterData.whereDidIComeFrom = "west";
+            }
+            MasterData.isExiting = false;
+            SceneManager.LoadScene("DungeonRoom");
+        }
+        else if(other.gameObject.CompareTag("Exit") && !MasterData.isExiting)
+        {
+            MasterData.isExiting = true;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-     //  print(rb.velocity);
-            
-            //this.rb.transform.position = (new Vector3(0,0,0));
+        Room currentRoom = MasterData.p.getCurrentRoom();
 
- 
-        if(Input.GetKeyDown(KeyCode.UpArrow) && !MasterData.isMoving && MasterData.p.getCurrentRoom().hasExit("north")) //same as MasterData.isMoving == false
+        if (Input.GetKeyDown(KeyCode.UpArrow) && this.isMoving == false)
         {
-            if(monsterCheck() == true)
+            if(currentRoom.hasExit("north"))
             {
-                this.northMonster.SetActive(true);
-                this.movementSpeed = 20.0f;
+                currentRoom.takeExit(MasterData.p, "north");
+                this.rb.AddForce(this.northExit.transform.position * movementSpeed);
+                this.isMoving = true;
             }
-            this.rb.AddForce(this.northExit.transform.position * movementSpeed); //direction = POSITION of north exit position vector3
-            MasterData.isMoving = true;
-            MasterData.isExiting = true;
-
-            
         }
-        
-        if(Input.GetKeyDown(KeyCode.LeftArrow) && !MasterData.isMoving && MasterData.p.getCurrentRoom().hasExit("west")) 
+        if(Input.GetKeyDown(KeyCode.LeftArrow) && this.isMoving == false)
         {
-            if(monsterCheck() == true)
+            if (currentRoom.hasExit("west"))
             {
-                this.westMonster.SetActive(true);
-                this.movementSpeed = 20.0f;
+                currentRoom.takeExit(MasterData.p, "west");
+                this.rb.AddForce(this.westExit.transform.position * movementSpeed);
+                this.isMoving = true;
             }
-            this.rb.AddForce(this.westExit.transform.position * movementSpeed); 
-            MasterData.isMoving = true;
-            MasterData.isExiting = true;
         }
-        if(Input.GetKeyDown(KeyCode.RightArrow) && MasterData.p.getCurrentRoom().hasExit("east")) 
+        if (Input.GetKeyDown(KeyCode.RightArrow) && this.isMoving == false)
         {
-            if(monsterCheck() == true)
+            if (currentRoom.hasExit("east"))
             {
-                this.eastMonster.SetActive(true);
-                this.movementSpeed = 20.0f;
+                currentRoom.takeExit(MasterData.p, "east");
+                this.rb.AddForce(this.eastExit.transform.position * movementSpeed);
+                this.isMoving = true;
             }
-            this.rb.AddForce(this.eastExit.transform.position * movementSpeed); 
-            MasterData.isMoving = true;
-            MasterData.isExiting = true;
-        }  
-       if(Input.GetKeyDown(KeyCode.DownArrow) && MasterData.p.getCurrentRoom().hasExit("south")) 
+        }
+        if (Input.GetKeyDown(KeyCode.DownArrow) && this.isMoving == false)
         {
-            if(monsterCheck() == true)
+            if (currentRoom.hasExit("south"))
             {
-                this.southMonster.SetActive(true);
-                this.movementSpeed = 20.0f;
+                currentRoom.takeExit(MasterData.p, "south");
+                this.rb.AddForce(this.southExit.transform.position * movementSpeed);
+                this.isMoving = true;
             }
-            this.rb.AddForce(this.southExit.transform.position * movementSpeed); 
-            MasterData.isMoving = true;
-            MasterData.isExiting = true;
-        }     
-    }
-    
-private bool monsterCheck()
-{
-    if(Random.Range(1,10) <= 3)
-        {
-            return true;
-        }
-        return false;
-}
-   private void OnTriggerEnter(Collider other)  
-    {
-        if(other.gameObject.CompareTag("Center"))
-        {
-          //  this.rb.velocity = Vector3.zero;
-          //  this.rb.angularVelocity = Vector3.zero;
-            print("Player has hit center");
-            this.rb.Sleep();
-            MasterData.isMoving = false;
-           // SceneManager.LoadScene("DungeonRoom"); //Ask scene manager to load a scene named "DugeonRoom 
-
-            //this.rb.AddForce(new Vector3(0.00f,0.50f, -3.00f) * movementSpeed);
-
-        }
-
-        if(other.gameObject.CompareTag("monster"))
-        {
-            SceneManager.LoadScene("FightScene");
         }
 
     }
-    private void OnTriggerExit(Collider other)
-    {
-        print("I hit something!!!");
-        if(other.gameObject.CompareTag("Exit") && MasterData.isExiting == true)  //other.gameObject.tag.Equals("Exit")
-        {
-            if(other.gameObject == this.northExit)
-                {
-                    MasterData.whereDidIComeFrom = "north";
-                }
-            if(other.gameObject == this.southExit)
-                {
-                    MasterData.whereDidIComeFrom = "south";
-                }
-            if(other.gameObject == this.eastExit)
-                {
-                    MasterData.whereDidIComeFrom = "east";
-                }
-            if(other.gameObject == this.westExit)
-                {
-                    MasterData.whereDidIComeFrom = "west";
-                }
-
-            print(MasterData.whereDidIComeFrom);
-            MasterData.count++;
-            MasterData.isExiting = false;
-            MasterData.p.getCurrentRoom().takeExit(MasterData.p, MasterData.whereDidIComeFrom);
-            SceneManager.LoadScene("DungeonRoom"); //Ask scene manager to load a scene named "DugeonRoom 
-        }
-
-
-    }
-
 }

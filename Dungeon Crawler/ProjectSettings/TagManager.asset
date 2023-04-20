@@ -5,8 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Exit
-  - Center
-  - monster
+  - center
+  - Door
   layers:
   - Default
   - TransparentFX

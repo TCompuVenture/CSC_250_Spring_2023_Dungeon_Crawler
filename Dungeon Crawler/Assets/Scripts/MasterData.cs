@@ -1,19 +1,16 @@
-public class MasterData //NOT Monobehavior - doesn't need start() or update() things! //Non-mono behaviors inherit from Object - not something Unity knows about
+using UnityEngine;
+
+public class MasterData
 {
-    public static int count = 0; //Call with class NAME, so MasterData
+    public static int count = 0;
     public static string whereDidIComeFrom = "?";
-    public static bool isMoving = true;
-    public static bool isExiting = false;
+    public static bool isExiting = true;
     private static bool isDungeonSetup = false;
     public static Dungeon cs = null;
     public static Player p = null;
-    public static bool comingFromFight = false;
-    public static string directionPlayerIsMoving;
+    public static GameObject musicLooper = null;
 
-   // public static Vector3 centerShift; //Idea here would be to shift center when Player has chosen a direction such that 
-   //When the Player rolls into the next room, the Player hits the edge of the centerController only when over dead center.
-
-   public static void setupDungeon()
+    public static void setupDungeon()
     {
         if(MasterData.isDungeonSetup == false)
         {
@@ -25,5 +22,5 @@ public class MasterData //NOT Monobehavior - doesn't need start() or update() th
             MasterData.isDungeonSetup = true;
         }
     }
+ 
 }
-//IS a singleton
