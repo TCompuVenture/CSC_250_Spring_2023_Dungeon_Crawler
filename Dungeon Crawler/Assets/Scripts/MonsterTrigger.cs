@@ -18,16 +18,16 @@ public class MonsterTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        print(areFightsEnabled);
+       // print(areFightsEnabled);
         
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        print("Point 1!");
+       // print("Point 1!");
         if(this.areFightsEnabled)
         {
-            print("uh oh");
+//            print("uh oh");
             int chanceToFight = Random.Range(1, 100);
 
             if (chanceToFight <= this.chanceToGetIntoFight)
