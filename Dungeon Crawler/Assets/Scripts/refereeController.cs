@@ -12,6 +12,8 @@ public class refereeController : MonoBehaviour
     public TextMeshProUGUI playerSB;
     private DeathMatch theMatch;
     public AudioSource jukebox;
+    public AudioClip victoryMusic;
+
 
     // Start is called before the first frame update
     void Start()
@@ -23,12 +25,21 @@ public class refereeController : MonoBehaviour
        // theMatch.fight();
         StartCoroutine(theMatch.fight());
 
+ 
+
     }
 
     // Update is called once per frame
     void Update()
     {
        // print(this.theMonster.getData());
+        if(MasterData.winner == MasterData.p)
+        {
+            print("Player won!");
+            jukebox.Stop();
+            jukebox.clip = victoryMusic;
+            jukebox.Play();
+        }
     }
  
  

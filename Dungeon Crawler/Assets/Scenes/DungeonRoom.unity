@@ -1899,6 +1899,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87b063f4670374fb4a451010a67678b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fightMusic: {fileID: 8300000, guid: ad350e719f2e9495c90b6573c354f444, type: 3}
+  victoryMusic: {fileID: 0}
 --- !u!4 &1912440751 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1402758661513540240, guid: 4ecf6aa2a2182cf4c843c0d565e94cd0, type: 3}

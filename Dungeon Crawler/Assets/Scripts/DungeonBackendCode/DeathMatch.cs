@@ -15,7 +15,7 @@ public class DeathMatch
     private int whoseTurn;
     private Rigidbody rb;
 
-    private AudioSource jukebox;
+    //private AudioSource jukebox;
 
     public DeathMatch(Inhabitant dude1, Inhabitant dude2, GameObject dude1go, GameObject dude2go, TextMeshProUGUI playerSB, TextMeshProUGUI monsterSB, AudioSource jukebox)
     {
@@ -26,7 +26,7 @@ public class DeathMatch
         this.monsterSB = monsterSB;
         this.playerSB = playerSB;
         whoseTurn = 0;  
-        this.jukebox = jukebox;
+        //this.jukebox = jukebox;
        // Console.WriteLine("hi");
 
     }
@@ -59,14 +59,21 @@ public class DeathMatch
                 }
 
         }
-        yield return new WaitForSecondsRealtime(3); 
+        yield return new WaitForSecondsRealtime(4); 
 
         this.playerSB.text = this.dude1.getData();
         this.monsterSB.text = this.dude2.getData();
 
         }
-        if(dude1.getHP > 0)
+        if(dude1.getHP() > 0)
         {
+            MasterData.winner = this.dude1;
+            this.dude2go.SetActive(false);
+        }
+        else if(dude2.getHP() > 0)
+        {
+            MasterData.winner = this.dude2;
+            this.dude1go.SetActive(false);
 
         }
 

@@ -10,6 +10,9 @@ public class MasterData
     public static Player p = null;
     public static GameObject musicLooper = null;
 
+    public static Inhabitant winner;
+
+
     public static void setupDungeon()
     {
         if(MasterData.isDungeonSetup == false)

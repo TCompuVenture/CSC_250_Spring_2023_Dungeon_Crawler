@@ -1719,6 +1719,8 @@ MonoBehaviour:
   playerGO: {fileID: 552582364}
   monsterSB: {fileID: 2043387942}
   playerSB: {fileID: 1430931386}
+  jukebox: {fileID: 28421176}
+  victoryMusic: {fileID: 8300000, guid: 4677e5009ea2f4bde873021b14505cd6, type: 3}
 --- !u!4 &2007330363
 Transform:
   m_ObjectHideFlags: 0
