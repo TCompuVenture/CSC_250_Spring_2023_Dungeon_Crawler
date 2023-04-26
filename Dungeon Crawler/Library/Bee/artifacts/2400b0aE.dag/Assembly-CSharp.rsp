@@ -348,6 +348,7 @@
 "Assets/AN Interactive Physical Door Pack/Scripts/AN_HeroInteractive.cs"
 "Assets/AN Interactive Physical Door Pack/Scripts/AN_PlugScript.cs"
 "Assets/Scripts/DungeonBackendCode/DeathMatch.cs"
+"Assets/Scripts/DungeonBackendCode/Dice.cs"
 "Assets/Scripts/DungeonBackendCode/Dungeon.cs"
 "Assets/Scripts/DungeonBackendCode/Exit.cs"
 "Assets/Scripts/DungeonBackendCode/Inhabitant.cs"
@@ -355,13 +356,13 @@
 "Assets/Scripts/DungeonBackendCode/Player.cs"
 "Assets/Scripts/DungeonBackendCode/Room.cs"
 "Assets/Scripts/DungeonSetup.cs"
+"Assets/Scripts/Follow.cs"
 "Assets/Scripts/MasterData.cs"
 "Assets/Scripts/MonsterTrigger.cs"
 "Assets/Scripts/MusicLooper.cs"
 "Assets/Scripts/PlayerController.cs"
+"Assets/Scripts/RefereeController.cs"
 "Assets/Scripts/centerController.cs"
-"Assets/Scripts/refereeController.cs"
-"Assets/Scripts/resetPosition.cs"
 -langversion:9.0
 
 /deterministic

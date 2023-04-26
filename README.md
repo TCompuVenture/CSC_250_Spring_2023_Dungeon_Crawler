@@ -1,2 +1,2 @@
-# CSC_250_Spring_2023_Dungeon_Crawler
+# CSC250Spring2023DungeonCrawler
  

@@ -5,8 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MonsterTrigger : MonoBehaviour
 {
-   // public bool enableFights = true;
-    public bool areFightsEnabled = true;
+    public bool enableFights = true;
     public float chanceToGetIntoFight = 30f;
 
     // Start is called before the first frame update
@@ -18,16 +17,13 @@ public class MonsterTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       // print(areFightsEnabled);
         
     }
 
     private void OnTriggerEnter(Collider other)
     {
-       // print("Point 1!");
-        if(this.areFightsEnabled)
+        if(this.enableFights)
         {
-//            print("uh oh");
             int chanceToFight = Random.Range(1, 100);
 
             if (chanceToFight <= this.chanceToGetIntoFight)

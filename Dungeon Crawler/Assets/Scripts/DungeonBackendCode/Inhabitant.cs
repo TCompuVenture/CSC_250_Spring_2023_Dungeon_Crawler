@@ -15,27 +15,31 @@ public class Inhabitant
         this.ac = r.Next(10, 18);
         this.damage = r.Next(1, 6);
     }
+
     public string getData()
     {
         string s = this.name;
         s = s + " - " + this.hp + " / " + this.ac + " / " + this.damage;
         return s;
     }
+
+    public bool isDead()
+    {
+        return this.hp <= 0;
+    }
+
     public int getAC()
     {
-        return ac;
+        return this.ac;
     }
-    public int getHP()
-    {
-        return hp;
-    }
+
     public int getDamage()
     {
-        return damage;
-    }  
+        return this.damage;
+    }
 
-    public void setHP(int hp)
+    public void takeDamage(int damage)
     {
-        this.hp = this.hp - hp;
+        this.hp = this.hp - damage;
     }
 }
