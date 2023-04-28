@@ -12,8 +12,8 @@ public class Inhabitant
         this.name = name;
         Random r = new Random();
         this.hp = r.Next(10, 21);
-        this.ac = r.Next(5, 13); //Changed from 10, 18
-        this.damage = r.Next(6, 12); //Changed from 1,6 to make play more rapid
+        this.ac = r.Next(10,18); //Changed from 10, 18
+        this.damage = r.Next(1,6); //Changed from 1,6 to make play more rapid
     }
 
     public string getData()
