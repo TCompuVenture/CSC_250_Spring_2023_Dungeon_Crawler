@@ -199,10 +199,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Chomper
       objectReference: {fileID: 0}
-    - target: {fileID: 3074657719725428346, guid: cbbcf6e267045b043ae0a5d0debc8280, type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cbbcf6e267045b043ae0a5d0debc8280, type: 3}
 --- !u!1 &95648981
@@ -239,6 +235,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableFights: 1
   chanceToGetIntoFight: 100
+  Player: {fileID: 1032391162}
 --- !u!65 &95648983
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -739,6 +736,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableFights: 1
   chanceToGetIntoFight: 100
+  Player: {fileID: 1032391162}
 --- !u!65 &736914809
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1192,6 +1190,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableFights: 1
   chanceToGetIntoFight: 100
+  Player: {fileID: 1032391162}
 --- !u!65 &1249066984
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1622,7 +1621,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1727503803}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1699,6 +1698,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enableFights: 1
   chanceToGetIntoFight: 100
+  Player: {fileID: 1032391162}
 --- !u!65 &1890751199
 BoxCollider:
   m_ObjectHideFlags: 0

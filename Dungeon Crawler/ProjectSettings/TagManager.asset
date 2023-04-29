@@ -7,7 +7,6 @@ TagManager:
   - Exit
   - center
   - Door
-  - Monster
   layers:
   - Default
   - TransparentFX

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DeathMatch
 {
@@ -9,19 +10,15 @@ public class DeathMatch
     private GameObject dude1GO;
     private GameObject dude2GO;
     private Rigidbody currRigidBodyOfAttacker;
-    private Rigidbody currRigidBodyOfTarget;
-    private float attackMoveDistance = 2.5f;
+    private float attackMoveDistance = -2.5f;
     private Vector3 attackerOriginalPosition;
     private Inhabitant currentAttacker;
     private GameObject currentAttackerGO;
     private Inhabitant currentTarget;
     private GameObject currentTargetGO;
     private MonoBehaviour refereeInstance;
-    private GameObject playerCostume;
-    private GameObject monsterCostume;
-    private AudioClip victoryMusic;
 
-    public DeathMatch(Inhabitant dude1, Inhabitant dude2, GameObject dude1GO, GameObject dude2GO, MonoBehaviour refereeInstance, GameObject playerCostume, GameObject monsterCostume, AudioClip victoryMusic)
+    public DeathMatch(Inhabitant dude1, Inhabitant dude2, GameObject dude1GO, GameObject dude2GO, MonoBehaviour refereeInstance)
     {
         this.dude1 = dude1;
         this.dude2 = dude2;
@@ -32,9 +29,22 @@ public class DeathMatch
         this.currentTarget = this.dude2;
         this.currentTargetGO = this.dude2GO;
         this.refereeInstance = refereeInstance;
-        this.playerCostume = playerCostume;
-        this.monsterCostume = monsterCostume;
-        this.victoryMusic = victoryMusic;
+    }
+
+    private IEnumerator JumpCoroutine()
+    {
+        float duration = 60f; // 1 minute
+        float speed = 5f;
+        float startTime = Time.time;
+        Vector3 startPosition = this.currentAttackerGO.transform.position;
+
+        while (Time.time - startTime < duration)
+        {
+            float newY = startPosition.y + Mathf.Sin((Time.time - startTime) * speed) * 0.5f;
+            this.currentAttackerGO.transform.position = new Vector3(this.currentAttackerGO.transform.position.x, newY, this.currentAttackerGO.transform.position.z);
+
+            yield return null;
+        }
     }
 
     //this is basically a thread (like our worker bees from Java)
@@ -42,86 +52,58 @@ public class DeathMatch
     {
         //yield return new WaitForSeconds(1.5f);
         Vector3 originalPosition = this.attackerOriginalPosition;
-        Vector3 targetPosition = originalPosition + this.currentAttackerGO.transform.right * attackMoveDistance;
+        Vector3 targetPosition = originalPosition + this.currentAttackerGO.transform.forward * attackMoveDistance;
 
         this.currRigidBodyOfAttacker.MovePosition(targetPosition);
 
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(0.5f);
 
         this.currRigidBodyOfAttacker.MovePosition(originalPosition);
 
         //try to hit target here
-        if(Dice.roll(20) >= this.currentTarget.getAC())
+        if(Dice.roll(20) >= this.currentTarget.getAC() && this.currentTargetGO.tag != "Player") //MAKES PLAYER ALWAYS WIN  - REMOVE!
         {
             this.currentTarget.takeDamage(this.currentAttacker.getDamage());
         }
 
         
 
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(0.5f);
 
         //this.refereeInstance.BroadcastMessage("updateScore");
-        ((RefereeController)this.refereeInstance).updateScore(currentAttackerGO.tag);
-
-        yield return new WaitForSeconds(.5f); //makes scoreboard line up with what's actually happening on screen
-
+        ((RefereeController)this.refereeInstance).updateScore();
 
         if(this.currentTarget.isDead())
         {
-            //((RefereeController)this.refereeInstance).updateScore(currentAttackerGO.tag); //extra - for debug
-
-            MasterData.musicLooper.GetComponent<AudioSource>().Stop();           
-            MasterData.musicLooper.GetComponent<AudioSource>().clip = victoryMusic;
-            MasterData.musicLooper.GetComponent<AudioSource>().Play();
-
-            if(currentTargetGO.tag == "Player")
-            {
-                this.playerCostume.transform.Rotate(180.0f, 0.0f, 0.0f); //Flip dead guy over
-                this.playerCostume.transform.position = new Vector3(this.currentTargetGO.transform.position.x,3,this.currentTargetGO.transform.position.z); //Move dead guy up so he doesn't get flipped underneath the floor!
-                //this.playerCostume.transform.LookAt(new Vector3(originalPosition.x, 0, originalPosition.z));
-              //  this.monsterCostume.transform.LookAt(new Vector3(originalPosition.x, -10, originalPosition.z));
-
-            }
-            else if (currentTargetGO.tag == "Monster")
-            {
-                this.monsterCostume.transform.Rotate(180.0f, 0.0f, 0.0f); //Flip dead guy over
-                this.monsterCostume.transform.position = new Vector3(this.currentTargetGO.transform.position.x,3,this.currentTargetGO.transform.position.z); //Move dead guy up so he doesn't get flipped underneath the floor!
-                //this.playerCostume.transform.LookAt(new Vector3(originalPosition.x, -20, originalPosition.z));
-            }
-            for(int i = 0; i < 10; i++)
-            {
-                //this.attackerOriginalPosition = this.currentAttackerGO.transform.position;
-                this.currRigidBodyOfAttacker.MovePosition(new Vector3(this.currentAttackerGO.transform.position.x, this.currentAttackerGO.transform.position.y+8, this.currentAttackerGO.transform.position.z));
-                yield return new WaitForSeconds(1.0f);
-                this.currRigidBodyOfAttacker.MovePosition(attackerOriginalPosition);
-                yield return new WaitForSeconds(1.0f);
-
-            }
-
             //what happens when our fight is over?
             //1. Make the dead guy fall over
+            MasterData.shouldFollowRotation = true;
+            this.currentTargetGO.transform.Rotate(new Vector3(180, 0, 0));
+
             //2. Make the winner jump up and down
+            this.refereeInstance.StartCoroutine(JumpCoroutine());
+
             //3. Player Victory Music
+            if(this.currentAttackerGO == this.dude1GO)
+            {
+                ((RefereeController)this.refereeInstance).playEndOfFightMusic("playerWin");
+                yield return new WaitForSeconds(5.0f);
+                SceneManager.LoadScene("DungeonRoom");
+            }
+            else
+            {
+                ((RefereeController)this.refereeInstance).playEndOfFightMusic("monsterWin");
+                //play sad game over
+                yield return new WaitForSeconds(5.0f);
+                SceneManager.LoadScene("LoseScene");
+
+            }
+
 
         }
         else
         {
             //call the fight method again after this guy is done moving
-            if (this.currentAttackerGO == this.dude1GO)
-            {
-                this.currentAttackerGO = this.dude2GO;
-                this.currentAttacker = this.dude2;
-                this.currentTarget = this.dude1;
-                this.currentTargetGO = this.dude1GO;
-               // this.currRigidBodyOfAttacker = this.currentTargetGO.GetComponent<currRigidBodyOfAttacker>();
-            }
-            else
-            {
-                this.currentAttackerGO = this.dude1GO;
-                this.currentAttacker = this.dude1;
-                this.currentTarget = this.dude2;
-                this.currentTargetGO = this.dude2GO;
-            }
             this.fight();
         }
     }
@@ -137,13 +119,25 @@ public class DeathMatch
         //{
             this.attackerOriginalPosition = this.currentAttackerGO.transform.position;
             this.currRigidBodyOfAttacker = this.currentAttackerGO.GetComponent<Rigidbody>();
-            this.currRigidBodyOfTarget = this.currentTargetGO.GetComponent<Rigidbody>();            
-            this.attackMoveDistance *= -1;
+            //this.attackMoveDistance *= -1;
 
+            if (this.currentAttackerGO == this.dude1GO)
+            {
+                this.currentAttackerGO = this.dude2GO;
+                this.currentAttacker = this.dude2;
+                this.currentTarget = this.dude1;
+                this.currentTargetGO = this.dude1GO;
+            }
+            else
+            {
+                this.currentAttackerGO = this.dude1GO;
+                this.currentAttacker = this.dude1;
+                this.currentTarget = this.dude2;
+                this.currentTargetGO = this.dude2GO;
+            }
 
-            ((RefereeController)this.refereeInstance).updateScore(currentAttackerGO.tag);
+            //non-blocking line of code
             this.refereeInstance.StartCoroutine(MoveObjectRoutine());
-
         //}
         
     }

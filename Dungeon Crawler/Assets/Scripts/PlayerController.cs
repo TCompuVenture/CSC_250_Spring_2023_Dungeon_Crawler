@@ -15,9 +15,12 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        this.updateExits();
-
+        print("At top of PlayerController Start: " + MasterData.PlayerResumePosition);
         this.rb = this.GetComponent<Rigidbody>();
+        if(MasterData.PlayerResumePosition == new Vector3(0.0f, 0.0f, 0.0f))
+        {
+        print("doing setup");
+        this.updateExits();
         this.isMoving = false;
 
         if (!MasterData.whereDidIComeFrom.Equals("?"))
@@ -50,7 +53,15 @@ public class PlayerController : MonoBehaviour
                 this.rb.AddForce(Vector3.right * 150.0f);
             }
         }
-        
+        }
+        else if(MasterData.PlayerResumePosition != new Vector3(0.0f, 0.0f, 0.0f))
+        {
+            this.rb.transform.position = MasterData.PlayerResumePosition;
+            MasterData.PlayerResumePosition = new Vector3(0.0f, 0.0f, 0.0f);
+            MasterData.isExiting = true;
+            //Now, just need to make Chomper face in right direction + apply force to him towards exits that he is taking!
+        }
+
      
     }
 
@@ -87,6 +98,7 @@ public class PlayerController : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
+
         if(other.gameObject.CompareTag("Exit") && MasterData.isExiting)
         {
             if(other.gameObject == this.northExit)

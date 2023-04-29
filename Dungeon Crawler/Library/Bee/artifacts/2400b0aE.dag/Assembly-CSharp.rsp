@@ -355,6 +355,7 @@
 "Assets/Scripts/DungeonBackendCode/Monster.cs"
 "Assets/Scripts/DungeonBackendCode/Player.cs"
 "Assets/Scripts/DungeonBackendCode/Room.cs"
+"Assets/Scripts/DungeonBackendCode/keepSadMusicPlaying.cs"
 "Assets/Scripts/DungeonSetup.cs"
 "Assets/Scripts/Follow.cs"
 "Assets/Scripts/MasterData.cs"

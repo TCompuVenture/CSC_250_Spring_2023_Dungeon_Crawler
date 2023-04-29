@@ -4,6 +4,7 @@ public class MasterData
 {
     public static bool playerShouldAttack = false;
     public static bool monsterShouldAttack = false;
+    public static bool shouldFollowRotation = false;
     public static int count = 0;
     public static string whereDidIComeFrom = "?";
     public static bool isExiting = true;
@@ -11,6 +12,8 @@ public class MasterData
     public static Dungeon cs = null;
     public static Player p = null;
     public static GameObject musicLooper = null;
+    public static Vector3 PlayerResumePosition = new Vector3(0.0f,0.0f,0.0f);
+    public static bool comingFromFight = false;
 
     public static void setupDungeon()
     {
