@@ -13,7 +13,11 @@ public class MasterData
     public static Player p = null;
     public static GameObject musicLooper = null;
     public static Vector3 PlayerResumePosition = new Vector3(0.0f,0.0f,0.0f);
+    public static Quaternion PlayerResumeRotation = new Quaternion();
+    public static string playerDirectionOfTravel = "?";
     public static bool comingFromFight = false;
+    public static bool enableFights = true;
+
 
     public static void setupDungeon()
     {

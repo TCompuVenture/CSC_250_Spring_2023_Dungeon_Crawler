@@ -7,8 +7,8 @@ public class RefereeController : MonoBehaviour
 {
     public GameObject monsterGO;
     public GameObject playerGO;
-    public TextMeshPro monsterSB;
-    public TextMeshPro playerSB;
+    public TextMeshProUGUI monsterSB;
+    public TextMeshProUGUI playerSB;
     private Monster theMonster;
     private DeathMatch theMatch;
     public GameObject fightJukeBox;

@@ -61,7 +61,7 @@ public class DeathMatch
         this.currRigidBodyOfAttacker.MovePosition(originalPosition);
 
         //try to hit target here
-        if(Dice.roll(20) >= this.currentTarget.getAC() && this.currentTargetGO.tag != "Player") //MAKES PLAYER ALWAYS WIN  - REMOVE!
+        if(Dice.roll(20) >= this.currentTarget.getAC())
         {
             this.currentTarget.takeDamage(this.currentAttacker.getDamage());
         }
@@ -70,7 +70,6 @@ public class DeathMatch
 
         yield return new WaitForSeconds(0.5f);
 
-        //this.refereeInstance.BroadcastMessage("updateScore");
         ((RefereeController)this.refereeInstance).updateScore();
 
         if(this.currentTarget.isDead())
