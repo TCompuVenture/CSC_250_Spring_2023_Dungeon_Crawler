@@ -1,0 +1,617 @@
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
+{ "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 0, "tid": 1, "ts": 1682898717417148, "dur": 77592, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1682898717417422, "dur": 1217, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1682898717418640, "dur": 74997, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1682898717493641, "dur": 1098, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1682898717494946, "dur": 12, "ph": "X", "name": "", "args": {} },
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":12345, "tid":0, "ts":1682898717448665, "dur":378, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1682898717449052, "dur":22, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1682898717449080, "dur":11, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1682898717449091, "dur":141, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1682898717449244, "dur":254, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1682898717449499, "dur":1, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1682898717490393, "dur":5, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1682898717490398, "dur":1, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1682898717490399, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1682898717490400, "dur":0, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1682898717490400, "dur":0, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1682898717490400, "dur":0, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1682898717490400, "dur":11, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1682898717490411, "dur":1, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1682898717490412, "dur":15, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1682898717490427, "dur":0, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1682898717490427, "dur":51, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1682898717490478, "dur":0, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1682898717490478, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1682898717490482, "dur":0, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1682898717490482, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1682898717490485, "dur":10, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1682898717490495, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1682898717490501, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1682898717490503, "dur":287, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1682898717449140, "dur":365, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1682898717449506, "dur":485, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1682898717449992, "dur":0, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/LinuxPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1682898717449993, "dur":14, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1682898717450010, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1682898717450033, "dur":9, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1682898717450049, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1682898717450435, "dur":52, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":1, "ts":1682898717450490, "dur":5, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1682898717450495, "dur":2, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1682898717450507, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1682898717450515, "dur":119, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1682898717450637, "dur":3, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1682898717450640, "dur":3, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1682898717450648, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1682898717450653, "dur":100, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1682898717450756, "dur":3, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1682898717450759, "dur":3, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1682898717450766, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1682898717450772, "dur":102, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":1, "ts":1682898717450877, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682898717450893, "dur":4, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1682898717450900, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1682898717450904, "dur":42, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682898717450948, "dur":3, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/x86_64/libMonoPosixHelper.so" }}
+,{ "pid":12345, "tid":1, "ts":1682898717450951, "dur":9, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1682898717450963, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1682898717451024, "dur":321, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/x86_64/libMonoPosixHelper.so" }}
+,{ "pid":12345, "tid":1, "ts":1682898717451350, "dur":1381, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682898717452731, "dur":7, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1682898717452743, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1682898717452760, "dur":1322, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682898717454086, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682898717454135, "dur":5, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1682898717454149, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1682898717454153, "dur":88, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682898717454243, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682898717454297, "dur":4, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1682898717454305, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1682898717454309, "dur":130, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682898717454441, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682898717454456, "dur":5, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1682898717454465, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1682898717454468, "dur":50, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682898717454519, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682898717454554, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1682898717454558, "dur":56, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682898717454615, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682898717454691, "dur":6, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1682898717454704, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1682898717454708, "dur":167, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682898717454876, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682898717454898, "dur":4, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1682898717454906, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1682898717454910, "dur":59, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682898717454971, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682898717454985, "dur":4, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1682898717454993, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1682898717454997, "dur":45, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682898717455044, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682898717455058, "dur":4, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1682898717455065, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1682898717455068, "dur":40, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682898717455110, "dur":84, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682898717455194, "dur":6, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1682898717455210, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1682898717455214, "dur":89, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682898717455304, "dur":1318, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682898717456623, "dur":7, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1682898717456634, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1682898717456638, "dur":3324, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682898717459966, "dur":69, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682898717460035, "dur":5, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1682898717460045, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1682898717460050, "dur":151, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682898717460203, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682898717460227, "dur":4, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1682898717460239, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1682898717460243, "dur":4262, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682898717464510, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682898717464532, "dur":8, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1682898717464545, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1682898717464550, "dur":84, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1682898717464636, "dur":25666, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1682898717449248, "dur":321, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1682898717449570, "dur":433, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1682898717450003, "dur":342, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1682898717450345, "dur":5, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1682898717450354, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1682898717450388, "dur":599, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1682898717452152, "dur":74, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":2, "ts":1682898717452226, "dur":7, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1682898717452237, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1682898717452242, "dur":169, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":2, "ts":1682898717452412, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1682898717452435, "dur":4, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1682898717452444, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1682898717452447, "dur":93, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1682898717452543, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1682898717452562, "dur":4, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1682898717452570, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1682898717452575, "dur":673, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1682898717453250, "dur":303, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1682898717453553, "dur":197, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1682898717455756, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1682898717455763, "dur":2549, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1682898717458317, "dur":7, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":2, "ts":1682898717458331, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1682898717458338, "dur":1980, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":2, "ts":1682898717460322, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1682898717460337, "dur":5, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1682898717460346, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1682898717460350, "dur":48, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1682898717460400, "dur":65, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1682898717460465, "dur":5, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1682898717460474, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1682898717460478, "dur":150, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1682898717460630, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/level1" }}
+,{ "pid":12345, "tid":2, "ts":1682898717460638, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1682898717460642, "dur":93, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/level1" }}
+,{ "pid":12345, "tid":2, "ts":1682898717460737, "dur":3, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":2, "ts":1682898717460744, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1682898717460747, "dur":970, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":2, "ts":1682898717461721, "dur":22, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1682898717461743, "dur":7, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1682898717461754, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1682898717461773, "dur":66, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1682898717461840, "dur":4, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":2, "ts":1682898717461848, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1682898717461852, "dur":45, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/sharedassets2.assets" }}
+,{ "pid":12345, "tid":2, "ts":1682898717461898, "dur":10, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":2, "ts":1682898717461909, "dur":3, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1682898717461916, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1682898717461920, "dur":39, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":2, "ts":1682898717461961, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1682898717461983, "dur":5, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1682898717461991, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1682898717461999, "dur":53, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1682898717462054, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/resources.assets" }}
+,{ "pid":12345, "tid":2, "ts":1682898717462060, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1682898717462064, "dur":483, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/resources.assets" }}
+,{ "pid":12345, "tid":2, "ts":1682898717462549, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1682898717462555, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1682898717462560, "dur":21288, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":2, "ts":1682898717483853, "dur":6432, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717449168, "dur":341, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717449509, "dur":492, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717450002, "dur":311, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":3, "ts":1682898717450313, "dur":4, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717450322, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717450337, "dur":507, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":3, "ts":1682898717450974, "dur":4, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":3, "ts":1682898717450978, "dur":3, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717450985, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717451013, "dur":5350, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":3, "ts":1682898717456371, "dur":5, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/x86_64/libmono-native.so" }}
+,{ "pid":12345, "tid":3, "ts":1682898717456376, "dur":8, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717456388, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717456396, "dur":3016, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/x86_64/libmono-native.so" }}
+,{ "pid":12345, "tid":3, "ts":1682898717459424, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/app.info" }}
+,{ "pid":12345, "tid":3, "ts":1682898717459426, "dur":6, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717459435, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717459441, "dur":50, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/app.info" }}
+,{ "pid":12345, "tid":3, "ts":1682898717459492, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1682898717459523, "dur":6, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717459534, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717459539, "dur":52, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1682898717459593, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1682898717459606, "dur":4, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717459615, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717459623, "dur":46, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.UnityAnalyticsCommonModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1682898717459671, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1682898717459685, "dur":4, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717459693, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717459697, "dur":46, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1682898717459745, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":3, "ts":1682898717459797, "dur":4, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717459808, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717459812, "dur":122, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":3, "ts":1682898717459936, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1682898717460016, "dur":5, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717460025, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717460029, "dur":178, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1682898717460209, "dur":31, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1682898717460241, "dur":7, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717460251, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717460255, "dur":73, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1682898717460330, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1682898717460352, "dur":26, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717460382, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717460385, "dur":65, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1682898717460452, "dur":7, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/level0.resS" }}
+,{ "pid":12345, "tid":3, "ts":1682898717460463, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717460466, "dur":183, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/level0.resS" }}
+,{ "pid":12345, "tid":3, "ts":1682898717460650, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1682898717460667, "dur":5, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717460676, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717460680, "dur":53, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1682898717460735, "dur":26, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1682898717460761, "dur":4, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717460773, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717460776, "dur":70, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1682898717460847, "dur":3, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/level2" }}
+,{ "pid":12345, "tid":3, "ts":1682898717460854, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717460857, "dur":40, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/level2" }}
+,{ "pid":12345, "tid":3, "ts":1682898717460899, "dur":8, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":3, "ts":1682898717460908, "dur":5, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717460917, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717460922, "dur":41, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":3, "ts":1682898717460966, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1682898717461018, "dur":4, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717461026, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717461030, "dur":113, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1682898717461145, "dur":3, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":3, "ts":1682898717461152, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717461156, "dur":1008, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":3, "ts":1682898717462167, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/boot.config" }}
+,{ "pid":12345, "tid":3, "ts":1682898717462178, "dur":4, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717462186, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717462190, "dur":37, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/boot.config" }}
+,{ "pid":12345, "tid":3, "ts":1682898717462229, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":3, "ts":1682898717462235, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717462238, "dur":1706, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":3, "ts":1682898717463946, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":3, "ts":1682898717463963, "dur":7, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717463975, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717463979, "dur":42, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":3, "ts":1682898717464023, "dur":149, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":3, "ts":1682898717464172, "dur":5, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717464181, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717464185, "dur":330, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":3, "ts":1682898717464518, "dur":4, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/level2.resS" }}
+,{ "pid":12345, "tid":3, "ts":1682898717464527, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1682898717464532, "dur":212, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/level2.resS" }}
+,{ "pid":12345, "tid":3, "ts":1682898717464746, "dur":25536, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717449210, "dur":324, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717449536, "dur":465, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717450002, "dur":263, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1682898717450265, "dur":4, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717450274, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717450281, "dur":140, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1682898717450425, "dur":9, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1682898717450434, "dur":7, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717450446, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717450499, "dur":60, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":4, "ts":1682898717450562, "dur":9, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":4, "ts":1682898717450571, "dur":4, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717450579, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717450584, "dur":526, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":4, "ts":1682898717451114, "dur":137, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":4, "ts":1682898717451251, "dur":5, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717451260, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717451270, "dur":290, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":4, "ts":1682898717451562, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1682898717451578, "dur":5, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717451587, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717451591, "dur":47, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1682898717451639, "dur":126, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":4, "ts":1682898717451766, "dur":4, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717451773, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717451777, "dur":221, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":4, "ts":1682898717452001, "dur":5, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1682898717452006, "dur":64, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717452075, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717452122, "dur":40, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1682898717452164, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1682898717452183, "dur":5, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717452192, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717452195, "dur":56, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1682898717452252, "dur":103, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1682898717452355, "dur":4, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717452364, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717452367, "dur":208, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1682898717452577, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1682898717452624, "dur":593, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717453224, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717453229, "dur":120, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1682898717453352, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1682898717453396, "dur":5, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717453405, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717453408, "dur":106, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1682898717453516, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1682898717453532, "dur":3, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717453539, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717453542, "dur":53, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1682898717453597, "dur":30, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1682898717453627, "dur":3, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717453634, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717453638, "dur":93, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1682898717453733, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1682898717453746, "dur":30, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717453788, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717453791, "dur":45, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1682898717453837, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1682898717453853, "dur":4, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717453861, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717453865, "dur":51, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1682898717453919, "dur":23, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":4, "ts":1682898717453943, "dur":3, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717453950, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717453953, "dur":57, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":4, "ts":1682898717454013, "dur":70, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":4, "ts":1682898717454084, "dur":8, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717454096, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717454100, "dur":150, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":4, "ts":1682898717454251, "dur":1494, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":4, "ts":1682898717455745, "dur":26, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717455774, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717455778, "dur":3577, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":4, "ts":1682898717459358, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1682898717459392, "dur":7, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717459404, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717459410, "dur":54, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1682898717459465, "dur":11, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1682898717459476, "dur":3, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717459488, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717459491, "dur":55, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1682898717459548, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":4, "ts":1682898717459566, "dur":3, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717459571, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717459573, "dur":38, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":4, "ts":1682898717459612, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1682898717459631, "dur":4, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717459639, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717459642, "dur":57, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1682898717459701, "dur":27, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":4, "ts":1682898717459728, "dur":4, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717459736, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717459740, "dur":65, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":4, "ts":1682898717459807, "dur":942, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":4, "ts":1682898717460749, "dur":8, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717460761, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717460765, "dur":2154, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":4, "ts":1682898717462921, "dur":3, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":4, "ts":1682898717462932, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1682898717462938, "dur":3326, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/sharedassets0.resource" }}
+,{ "pid":12345, "tid":4, "ts":1682898717466267, "dur":24133, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1682898717449194, "dur":321, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1682898717449515, "dur":478, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1682898717449993, "dur":158, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":5, "ts":1682898717450151, "dur":1, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1682898717450156, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1682898717450220, "dur":255, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":5, "ts":1682898717450477, "dur":6, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":5, "ts":1682898717450483, "dur":2, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1682898717450489, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1682898717450499, "dur":44, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":5, "ts":1682898717450545, "dur":4, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":5, "ts":1682898717450549, "dur":3, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1682898717450556, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1682898717450561, "dur":69, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":5, "ts":1682898717450633, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1682898717450650, "dur":3, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1682898717450657, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1682898717450661, "dur":47, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1682898717450710, "dur":4, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":5, "ts":1682898717450714, "dur":3, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1682898717450721, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1682898717450725, "dur":72, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":5, "ts":1682898717450832, "dur":17, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":5, "ts":1682898717450849, "dur":4, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1682898717450857, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1682898717450886, "dur":66, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":5, "ts":1682898717450954, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/x86_64/libmonobdwgc-2.0.so" }}
+,{ "pid":12345, "tid":5, "ts":1682898717450991, "dur":3, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1682898717451006, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1682898717451026, "dur":4631, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/x86_64/libmonobdwgc-2.0.so" }}
+,{ "pid":12345, "tid":5, "ts":1682898717455669, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1682898717455709, "dur":10, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1682898717455724, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1682898717455731, "dur":93, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1682898717455826, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1682898717455846, "dur":5, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1682898717455854, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1682898717455858, "dur":61, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1682898717455921, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1682898717455936, "dur":4, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1682898717455944, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1682898717455948, "dur":44, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1682898717455994, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":5, "ts":1682898717456055, "dur":4, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1682898717456062, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1682898717456067, "dur":154, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":5, "ts":1682898717456223, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1682898717456239, "dur":6, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1682898717456249, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1682898717456252, "dur":2464, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1682898717458720, "dur":7, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":5, "ts":1682898717458743, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1682898717458749, "dur":347, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":5, "ts":1682898717459099, "dur":76, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/level0" }}
+,{ "pid":12345, "tid":5, "ts":1682898717459179, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1682898717459186, "dur":114, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/level0" }}
+,{ "pid":12345, "tid":5, "ts":1682898717459302, "dur":4, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":5, "ts":1682898717459310, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1682898717459315, "dur":1543, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":5, "ts":1682898717460860, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1682898717460876, "dur":5, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1682898717460885, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1682898717460889, "dur":52, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1682898717460942, "dur":5, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/etc/config" }}
+,{ "pid":12345, "tid":5, "ts":1682898717460948, "dur":4, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1682898717460955, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1682898717460960, "dur":38, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/etc/config" }}
+,{ "pid":12345, "tid":5, "ts":1682898717461000, "dur":3, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/level1.resS" }}
+,{ "pid":12345, "tid":5, "ts":1682898717461007, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1682898717461010, "dur":174, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/level1.resS" }}
+,{ "pid":12345, "tid":5, "ts":1682898717461186, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/sharedassets1.resource" }}
+,{ "pid":12345, "tid":5, "ts":1682898717461192, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1682898717461196, "dur":7972, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/sharedassets1.resource" }}
+,{ "pid":12345, "tid":5, "ts":1682898717469172, "dur":21220, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1682898717449205, "dur":314, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1682898717449519, "dur":473, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1682898717449993, "dur":2459, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":6, "ts":1682898717452452, "dur":9, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1682898717452473, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1682898717452478, "dur":9415, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":6, "ts":1682898717461896, "dur":4, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1682898717461905, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1682898717461911, "dur":16179, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1682898717478102, "dur":12304, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1682898717449224, "dur":323, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1682898717449548, "dur":448, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1682898717449997, "dur":259, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1682898717450257, "dur":6, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1682898717450361, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1682898717450366, "dur":220, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1682898717450588, "dur":4, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":7, "ts":1682898717450592, "dur":17, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1682898717450613, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1682898717450642, "dur":60, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":7, "ts":1682898717450705, "dur":3, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":7, "ts":1682898717450708, "dur":4, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1682898717450716, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1682898717450723, "dur":35, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":7, "ts":1682898717450761, "dur":3, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":7, "ts":1682898717450764, "dur":3, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1682898717450771, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1682898717450844, "dur":98, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":7, "ts":1682898717450945, "dur":4, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":7, "ts":1682898717450949, "dur":4, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1682898717450972, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1682898717450978, "dur":57, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":7, "ts":1682898717451037, "dur":263, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":7, "ts":1682898717451300, "dur":5, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1682898717451309, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1682898717451312, "dur":580, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":7, "ts":1682898717451896, "dur":4, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/UnityPlayer.so" }}
+,{ "pid":12345, "tid":7, "ts":1682898717451901, "dur":5, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1682898717451908, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1682898717451913, "dur":38346, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/UnityPlayer.so" }}
+,{ "pid":12345, "tid":7, "ts":1682898717490267, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":7, "ts":1682898717490268, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717449235, "dur":319, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717449554, "dur":440, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717449994, "dur":321, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717450316, "dur":5, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717450349, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717450355, "dur":321, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717450678, "dur":9, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1682898717450687, "dur":5, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717450696, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717450703, "dur":71, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":8, "ts":1682898717450984, "dur":7, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft.x86_64" }}
+,{ "pid":12345, "tid":8, "ts":1682898717450991, "dur":2, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717450998, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717451011, "dur":86, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft.x86_64" }}
+,{ "pid":12345, "tid":8, "ts":1682898717451099, "dur":18, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717451118, "dur":4, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717451126, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717451130, "dur":43, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717451175, "dur":3, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":8, "ts":1682898717451178, "dur":3, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717451185, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717451215, "dur":39, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":8, "ts":1682898717451258, "dur":191, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717451449, "dur":4, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717451458, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717451462, "dur":384, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717451848, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717451867, "dur":5, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717451883, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717451887, "dur":51, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717451940, "dur":4, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Resources/UnityPlayer.png" }}
+,{ "pid":12345, "tid":8, "ts":1682898717451944, "dur":5, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717451952, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717451957, "dur":133, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Resources/UnityPlayer.png" }}
+,{ "pid":12345, "tid":8, "ts":1682898717452092, "dur":79, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717452171, "dur":5, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717452179, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717452192, "dur":165, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717452359, "dur":20, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717452379, "dur":42, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717452426, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717452430, "dur":56, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717452489, "dur":15, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717452505, "dur":100, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717452608, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717452612, "dur":71, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717452685, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717452714, "dur":6, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717452723, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717452727, "dur":55, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717452785, "dur":28, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717452813, "dur":4, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717452820, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717452824, "dur":56, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717452882, "dur":24, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717452907, "dur":4, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717452915, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717452919, "dur":58, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717452979, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717452991, "dur":4, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717452999, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717453003, "dur":45, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717453050, "dur":665, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717453716, "dur":5, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717453726, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717453731, "dur":1448, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717455181, "dur":139, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717455320, "dur":5, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717455330, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717455335, "dur":333, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717455672, "dur":113, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717455785, "dur":5, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717455794, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717455798, "dur":192, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717455993, "dur":16, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717456009, "dur":4, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717456018, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717456021, "dur":45, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717456068, "dur":12, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717456080, "dur":222, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717456307, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717456313, "dur":59, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717456374, "dur":19, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717456394, "dur":7, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717456405, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717456409, "dur":57, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717456469, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717456507, "dur":5, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717456516, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717456524, "dur":94, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717456619, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717456633, "dur":4, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717456640, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717456644, "dur":53, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717456699, "dur":650, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717457349, "dur":8, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717457363, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717457369, "dur":2168, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717459542, "dur":185, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717459727, "dur":8, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717459740, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717459745, "dur":400, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717460147, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717460187, "dur":5, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717460196, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717460201, "dur":95, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717460300, "dur":29, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717460329, "dur":6, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717460339, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717460343, "dur":88, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717460432, "dur":14, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717460447, "dur":4, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717460455, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717460459, "dur":51, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717460512, "dur":21, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717460533, "dur":5, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717460542, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717460545, "dur":64, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717460611, "dur":13, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717460624, "dur":6, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717460638, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717460643, "dur":52, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717460697, "dur":448, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles /home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717461146, "dur":6, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717461156, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1682898717461160, "dur":8673, "ph":"X", "name": "CopyFiles",  "args": { "detail":"/home/timothyc/Nextcloud/Tech/DungeonCrawlerBuild_4.30.23/DungeonCrawlerRoughDraft_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":8, "ts":1682898717469838, "dur":20465, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1682898717491058, "dur":240, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1682898717495037, "dur": 476, "ph": "X", "name": "backend_profiler0.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1682898717494929, "dur": 596, "ph": "X", "name": "Write chrome-trace events", "args": {} },

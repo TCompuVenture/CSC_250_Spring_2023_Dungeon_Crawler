@@ -61,9 +61,14 @@ public class DeathMatch
         this.currRigidBodyOfAttacker.MovePosition(originalPosition);
 
         //try to hit target here
-        if(Dice.roll(20) >= this.currentTarget.getAC())
+        if(Dice.roll(20) >= this.currentTarget.getAC() && MasterData.cheatMode == false)
         {
             this.currentTarget.takeDamage(this.currentAttacker.getDamage());
+        }
+        else if(MasterData.cheatMode && currentAttackerGO.tag.Equals("Player"))
+        {
+            MasterData.cheatMode = false;
+            this.currentTarget.takeDamage(100);
         }
 
         

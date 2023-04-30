@@ -17,6 +17,8 @@ public class MasterData
     public static string playerDirectionOfTravel = "?";
     public static bool comingFromFight = false;
     public static bool enableFights = true;
+    public static bool cheatMode = false;
+
 
 
     public static void setupDungeon()
