@@ -233,7 +233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0023c380186f845a5919e78d95109f5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chanceToGetIntoFight: 30
+  chanceToGetIntoFight: 100
   Player: {fileID: 1032391162}
   enableAllFights: 1
 --- !u!65 &95648983
@@ -734,7 +734,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0023c380186f845a5919e78d95109f5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chanceToGetIntoFight: 30
+  chanceToGetIntoFight: 100
   Player: {fileID: 1032391162}
   enableAllFights: 1
 --- !u!65 &736914809
@@ -1188,7 +1188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0023c380186f845a5919e78d95109f5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chanceToGetIntoFight: 30
+  chanceToGetIntoFight: 100
   Player: {fileID: 1032391162}
   enableAllFights: 1
 --- !u!65 &1249066984
@@ -1696,7 +1696,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0023c380186f845a5919e78d95109f5e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  chanceToGetIntoFight: 30
+  chanceToGetIntoFight: 100
   Player: {fileID: 1032391162}
   enableAllFights: 1
 --- !u!65 &1890751199

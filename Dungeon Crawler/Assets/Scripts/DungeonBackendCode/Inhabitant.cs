@@ -6,11 +6,12 @@ public class Inhabitant
     protected int ac;
     protected int damage;
     protected string name;
+    private Random r = new Random();
+
 
     public Inhabitant(string name)
     {
         this.name = name;
-        Random r = new Random();
         this.hp = r.Next(10, 21);
         this.ac = r.Next(10, 18);//CHANGE THIS!!!!!
         this.damage = r.Next(1, 6);  //CHANGE THIS!!!!!
@@ -31,6 +32,10 @@ public class Inhabitant
     public int getAC()
     {
         return this.ac;
+    }
+    public void resetHP()
+    {
+        this.hp = this.r.Next(10,21);
     }
 
     public int getDamage()
