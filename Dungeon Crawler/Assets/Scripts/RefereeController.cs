@@ -20,7 +20,7 @@ public class RefereeController : MonoBehaviour
     {
         this.theMonster = new Monster("goblin");
         this.updateScore();
-        this.theMatch = new DeathMatch(MasterData.p, this.theMonster, this.playerGO, this.monsterGO, this);
+        this.theMatch = new DeathMatch(MasterData.thePlayer, this.theMonster, this.playerGO, this.monsterGO, this);
         StartCoroutine(DelayBeforeFight());   
     }
 
@@ -39,7 +39,7 @@ public class RefereeController : MonoBehaviour
     public void updateScore()
     {
         this.monsterSB.text = this.theMonster.getData();
-        this.playerSB.text = MasterData.p.getData();
+        this.playerSB.text = MasterData.thePlayer.getData();
     }
 
     IEnumerator DelayBeforeFight()

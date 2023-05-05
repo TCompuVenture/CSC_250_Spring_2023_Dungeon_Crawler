@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        this.currentRoom = MasterData.p.getCurrentRoom();
+        this.currentRoom = MasterData.thePlayer.getCurrentRoom();
         print("At top of PlayerController Start: " + MasterData.PlayerResumePosition);
         print(MasterData.whereDidIComeFrom);
         this.rb = this.GetComponent<Rigidbody>();
@@ -92,6 +92,7 @@ public class PlayerController : MonoBehaviour
             MasterData.PlayerResumePosition = new Vector3(0.0f, 0.0f, 0.0f);
             MasterData.isExiting = true;
         }
+        StartCoroutine(PlayerHeal());
 
      
     }
@@ -118,6 +119,14 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    IEnumerator PlayerHeal()
+    {
+        yield return new WaitForSeconds(3f);
+        MasterData.thePlayer.healHP(1);
+        StartCoroutine(PlayerHeal()); //Indirect recursion
+
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.CompareTag("center"))
@@ -139,24 +148,24 @@ public class PlayerController : MonoBehaviour
 
             if(other.gameObject == this.northExit)
             {
-                currentRoom.takeExit(MasterData.p, "north");
+                currentRoom.takeExit(MasterData.thePlayer, "north");
                 MasterData.whereDidIComeFrom = "north";
             }
             else if (other.gameObject == this.southExit)
             {
                 MasterData.whereDidIComeFrom = "south";
-                currentRoom.takeExit(MasterData.p, "south");
+                currentRoom.takeExit(MasterData.thePlayer, "south");
 
             }
             else if (other.gameObject == this.eastExit)
             {
-                currentRoom.takeExit(MasterData.p, "east");
+                currentRoom.takeExit(MasterData.thePlayer, "east");
                 MasterData.whereDidIComeFrom = "east";
             }
             else if (other.gameObject == this.westExit)
             {
                 MasterData.whereDidIComeFrom = "west";
-                currentRoom.takeExit(MasterData.p, "west");
+                currentRoom.takeExit(MasterData.thePlayer, "west");
 
             }
             MasterData.isExiting = false;
@@ -171,7 +180,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Room currentRoom = MasterData.p.getCurrentRoom();
+        Room currentRoom = MasterData.thePlayer.getCurrentRoom();
 
 
         if (Input.GetKeyDown(KeyCode.UpArrow) && this.isMoving == false)

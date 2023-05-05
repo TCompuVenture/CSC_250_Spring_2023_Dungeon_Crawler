@@ -367,6 +367,7 @@
 "Assets/Scripts/PlayerController.cs"
 "Assets/Scripts/RefereeController.cs"
 "Assets/Scripts/centerController.cs"
+"Assets/Scripts/healthUpdater.cs"
 -langversion:9.0
 
 /deterministic

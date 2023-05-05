@@ -93,7 +93,7 @@ public class DeathMatch
                 ((RefereeController)this.refereeInstance).playEndOfFightMusic("playerWin");
                 yield return new WaitForSeconds(5.0f);
                 SceneManager.LoadScene("DungeonRoom");
-                dude1.resetHP();
+                //dude1.resetHP();
             }
             else
             {

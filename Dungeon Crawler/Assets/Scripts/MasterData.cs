@@ -10,7 +10,7 @@ public class MasterData
     public static bool isExiting = true;
     private static bool isDungeonSetup = false;
     public static Dungeon cs = null;
-    public static Player p = null;
+    public static Player thePlayer = null;
     public static GameObject musicLooper = null;
     public static Vector3 PlayerResumePosition = new Vector3(0.0f,0.0f,0.0f);
     public static Quaternion PlayerResumeRotation = new Quaternion();
@@ -28,8 +28,8 @@ public class MasterData
             MasterData.cs = new Dungeon(100);
             MasterData.cs.populateCSDepartment();
 
-            MasterData.p = new Player("Mike");
-            MasterData.cs.addPlayer(p);
+            MasterData.thePlayer = new Player("Mike");
+            MasterData.cs.addPlayer(thePlayer);
             MasterData.isDungeonSetup = true;
         }
     }

@@ -2,6 +2,7 @@ using System;
 
 public class Inhabitant
 {
+    protected int maxHP;
     protected int hp;
     protected int ac;
     protected int damage;
@@ -13,6 +14,7 @@ public class Inhabitant
     {
         this.name = name;
         this.hp = r.Next(10, 21);
+        this.maxHP = this.hp; //Never adjust, just tells us the max # of hit points we can get
         this.ac = r.Next(10, 18);//CHANGE THIS!!!!!
         this.damage = r.Next(1, 6);  //CHANGE THIS!!!!!
     }
@@ -46,5 +48,21 @@ public class Inhabitant
     public void takeDamage(int damage)
     {
         this.hp = this.hp - damage;
+    }
+    public void healHP(int amount)
+    {
+        this.hp += amount;
+        if(this.hp > this.maxHP) //can only heal up to max # of hit points
+        {
+            this.hp = this.maxHP;
+        } 
+    }
+    public int getHP()
+    {
+        return this.hp;
+    }
+    public int getMaxHP()
+    {
+        return this.maxHP;
     }
 }
